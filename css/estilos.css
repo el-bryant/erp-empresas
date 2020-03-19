@@ -1,0 +1,30 @@
+.nav-link {
+    color: #ffffff;
+}
+
+.nav-pills .nav-link:hover {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #01286b;
+    background-color: #ffffff;
+    font-weight: 700;
+}
+
+.nav-pills .nav-link {
+    border-radius: 10px 0 0 10px;
+}
+
+.barra-superior {
+    border-radius: 0 20px 20px 0;
+}
+
+.card-dashboard {
+    border-radius: 15px;
+}
+
+.card-header:first-child {
+    border-radius: 15px 15px 0 0;
+}

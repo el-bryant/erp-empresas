@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,10 +8,139 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>ERP - Empresas</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-xl-2 bg-danger pr-0 vh-100">
+                <div class="nav flex-column nav-pills mt-5 pt-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-estado-financiero-tab" data-toggle="pill" href="#v-pills-estado-financiero" role="tab" aria-controls="v-pills-estado-financiero" aria-selected="true">Estado financiero</a>
+                    <a class="nav-link" id="v-pills-ingresos-tab" data-toggle="pill" href="#v-pills-ingresos" role="tab" aria-controls="v-pills-ingresos" aria-selected="false">Ingresos</a>
+                    <a class="nav-link" id="v-pills-egresos-tab" data-toggle="pill" href="#v-pills-egresos" role="tab" aria-controls="v-pills-egresos" aria-selected="false">Egresos</a>
+                    <a class="nav-link" id="v-pills-conceptos-tab" data-toggle="pill" href="#v-pills-conceptos" role="tab" aria-controls="v-pills-conceptos" aria-selected="false">Conceptos</a>
+                    <a class="nav-link" id="v-pills-colaboradores-tab" data-toggle="pill" href="#v-pills-colaboradores" role="tab" aria-controls="v-pills-colaboradores" aria-selected="false">Colaboradores</a>
+                    <a class="nav-link" id="v-pills-informes-tab" data-toggle="pill" href="#v-pills-informes" role="tab" aria-controls="v-pills-profile" aria-selected="false">Informes</a>
+                    <a class="nav-link" id="v-pills-tareas-por-realizar-tab" data-toggle="pill" href="#v-pills-tareas-por-realizar" role="tab" aria-controls="v-pills-messages" aria-selected="false">Tareas por realizar</a>
+                    <a class="nav-link" id="v-pills-contactos-tab" data-toggle="pill" href="#v-pills-contactos" role="tab" aria-controls="v-pills-contactos" aria-selected="false">Contactos</a>
+                    <a class="nav-link" id="v-pills-notificaciones-tab" data-toggle="pill" href="#v-pills-notificaciones" role="tab" aria-controls="v-pills-notificaciones" aria-selected="false">Notificaciones</a>
+                    <a class="nav-link" id="v-pills-calendario-tab" data-toggle="pill" href="#v-pills-calendario" role="tab" aria-controls="v-pills-calendario" aria-selected="false">Calendario</a>
+                    <a class="nav-link" id="v-pills-configuracion-tab" data-toggle="pill" href="#v-pills-configuracion" role="tab" aria-controls="v-pills-configuracion" aria-selected="false">Configuración</a>
+                    <a class="nav-link" id="v-pills-inventario-tab" data-toggle="pill" href="#v-pills-inventario" role="tab" aria-controls="v-pills-inventario" aria-selected="false">Inventario</a>
+                </div>
+            </div>
+            <div class="col-md-9 col-xl-10 pl-0">
+                <div class="card bg-danger border-0 barra-superior mt-4 mb-4">
+                    <div class="row justify-content-end">
+                        <p class="my-1 ml-auto mr-5 text-white">Nombre de usuario</p>
+                    </div>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-estado-financiero" role="tabpanel" aria-labelledby="v-pills-estado-financiero-tab">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-10">
+                                    <div class="card rounded-pill border-0 bg-white shadow mt-3 mb-5">
+                                        <div class="row d-flex justify-content-between">
+                                            <p class="font-weight-bold my-1 ml-5">Estado financiero</p>
+                                            <p class="font-weight-bold my-1 mr-5 pr-5">20 - 12 - 19</p>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex justify-content-between px-4">
+                                        <div class="col-3">
+                                            <div class="card card-dashboard border-0 shadow">
+                                                <h5 class="card-header bg-dark text-white">Caja gerencia</h5>
+                                                <div class="card-body">
+                                                    <div class="card-title font-weight-bold h5 text-center text-muted">S/ 700.00</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card card-dashboard border-0 shadow">
+                                                <h5 class="card-header bg-info text-white">Cuenta bancaria</h5>
+                                                <div class="card-body">
+                                                    <div class="card-title font-weight-bold h5 text-center text-muted">S/ 700.00</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card card-dashboard border-0 shadow">
+                                                <h5 class="card-header bg-success text-white">Total</h5>
+                                                <div class="card-body">
+                                                    <div class="card-title font-weight-bold h5 text-center text-muted">S/ 700.00</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex justify-content-between px-4 mt-5 pt-4">
+                                        <div class="col-6">
+                                            <div class="card rounded border-0 shadow">
+                                                <div class="row px-4 py-2 justify-content-center">
+                                                    <div class="col-3 badge badge-success mt-2 mr-3 py-2 text-left">Saldo cajas:</div>
+                                                    <div class="col-8 badge badge-light mt-2 py-2">S/ 700.00</div>
+                                                    <div class="col-3 badge badge-success my-2 mr-3 py-2 text-left">Ingresos:</div>
+                                                    <div class="col-8 badge badge-light my-2 py-2">S/ 700.00</div>
+                                                    <div class="col-3 badge badge-success mb-2 mr-3 py-2 text-left">Egresos:</div>
+                                                    <div class="col-8 badge badge-light mb-2 py-2">S/ 700.00</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="card rounded border-0 shadow">
+                                                <div class="row px-4 py-2 justify-content-center">
+                                                    <div class="col-3 badge badge-success mt-2 mr-3 py-2 text-left">Saldo cajas:</div>
+                                                    <div class="col-8 badge badge-light mt-2 py-2">S/ 700.00</div>
+                                                    <div class="col-3 badge badge-success my-2 mr-3 py-2 text-left">Ingresos:</div>
+                                                    <div class="col-8 badge badge-light my-2 py-2">S/ 700.00</div>
+                                                    <div class="col-3 badge badge-success mb-2 mr-3 py-2 text-left">Egresos:</div>
+                                                    <div class="col-8 badge badge-light mb-2 py-2">S/ 700.00</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-ingresos" role="tabpanel" aria-labelledby="v-pills-ingresos-tab">
+                        <h1>Ingresos</h1>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-egresos" role="tabpanel" aria-labelledby="v-pills-egresos-tab">
+                        <h1>Egresos</h1>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-conceptos" role="tabpanel" aria-labelledby="v-pills-conceptos-tab">
+                        <h1>Conceptos</h1>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-colaboradores" role="tabpanel" aria-labelledby="v-pills-colaboradores-tab">
+                        <h1>Colaboradores</h1>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-informes" role="tabpanel" aria-labelledby="v-pills-informes-tab">
+                        <h1>Informes</h1>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-tareas-por-realizar" role="tabpanel" aria-labelledby="v-pills-tareas-por-realizar-tab">
+                        <h1>Tareas por realizar</h1>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-contactos" role="tabpanel" aria-labelledby="v-pills-contactos-tab">
+                        <h1>Contactos</h1>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-notificaciones" role="tabpanel" aria-labelledby="v-pills-notificaciones-tab">
+                        <h1>Notificaciones</h1>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-calendario" role="tabpanel" aria-labelledby="v-pills-calendario-tab">
+                        <h1>Calendario</h1>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-configuracion" role="tabpanel" aria-labelledby="v-pills-configuracion-tab">
+                        <h1>Configuración</h1>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-inventario" role="tabpanel" aria-labelledby="v-pills-inventario-tab">
+                        <h1>Inventario</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
