@@ -1,0 +1,19 @@
+Color azul principal: #005da1
+Color letras izquierda: #005da1 / #ffffff
+Color caja gerencia: #00b3ba
+Color caja bancaria: #0091cf
+Color total: #003761
+Color ícono cumpleaños: #17ead4
+Color botón borde perfil usuario: #42e695
+Color números de estado financiero: #4d4d4d
+Botones guardar o similares: #005da1
+Botones registro: #42e695
+Ícono de detalles: #0091cf
+Letras información: #808080
+Botón estado activo: #42e695
+Botón estado inactivo: #cccccc
+Botón word: #586fc4
+Botón pdf: #013239
+Color botón excel: #3bbe28
+Color botón buscar: #17ead4
+Color palabra administrador: #929dc6

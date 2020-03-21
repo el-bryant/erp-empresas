@@ -1,24 +1,45 @@
+@font-face {
+    font-family: 'tahoma-regular';
+    src: url("../font/tahoma.ttf");
+}
+
+@font-face {
+    font-family: 'tahoma-bold';
+    src: url("../font/tahomabd.ttf");
+}
+
+body {
+    background-color: #eaedf4;
+    font-family: 'tahoma-regular';
+    font-size: 15px;
+}
+
+.bold {
+    font-family: 'tahoma-bold';
+}
+
 .nav-link {
     color: #ffffff;
 }
 
 .nav-pills .nav-link:hover {
     color: #ffffff;
-    font-weight: 700;
+    font-family: 'tahoma-bold';
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #01286b;
-    background-color: #ffffff;
-    font-weight: 700;
+    color: #005da1;
+    background-color: #eaedf4;
+    font-family: 'tahoma-bold';
 }
 
 .nav-pills .nav-link {
-    border-radius: 10px 0 0 10px;
+    border-radius: 20px 0 0 20px;
+    font-family: 'tahoma-regular';
 }
 
 .barra-superior {
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px 0 0 20px;
 }
 
 .card-dashboard {
@@ -27,4 +48,88 @@
 
 .card-header:first-child {
     border-radius: 15px 15px 0 0;
+}
+
+.bg-azul {
+    background-color: #005da1;
+}
+
+.letra-azul {
+    color: #005da1;
+}
+
+.ic-cumple {
+    background-color: #17ead4;
+    width: 20px;
+    height: 20px;
+}
+
+.ic-perfil {
+    background-color: #42e695;
+    width: 20px;
+    height: 20px;
+}
+
+.ic-opciones {
+    background-color: #005da1;
+    width: 20px;
+    height: 20px;
+}
+
+.navbar {
+    border-radius: 20px 0 0 20px;
+}
+
+.sombra {
+    box-shadow: #2488e220 3px 3px 3px 0;
+}
+
+.bg-caja-gerencia {
+    background-color: #00b3ba;
+}
+
+.bg-caja-bancaria {
+    background-color: #0091cf;
+}
+
+.bg-total {
+    background-color: #003761;
+}
+
+.text-gris {
+    color: #4d4d4d;
+}
+
+.badge-oscuro {
+    color: #005da1;
+    background-color: #a9cbde;
+    border-radius: 20px 10px 10px 20px;
+}
+
+.badge-claro {
+    color: #4d4d4d;
+    background-color: #e7f2f4;
+    border-radius: 10px 20px 20px 10px;
+}
+
+.bg-turquesa {
+    background-color: #4ac2b9;
+}
+
+.btn-azul {
+    font-size: 15px;
+    background-color: #005da1;
+}
+
+.text-azul {
+    color: #005da1;
+}
+
+.titulo {
+    font-family: 'tahoma-bold';
+    font-size: 20px;
+}
+
+.thead-verde {
+    background-color: #4ac2b9;
 }

@@ -15,12 +15,15 @@
   <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3 col-xl-2 bg-danger pr-0 vh-100">
+
+            <!--Barra de navegación izquierda-->
+            <div class="col-md-3 col-xl-2 bg-azul pr-0 vh-100">
                 <div class="nav flex-column nav-pills mt-5 pt-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-estado-financiero-tab" data-toggle="pill" href="#v-pills-estado-financiero" role="tab" aria-controls="v-pills-estado-financiero" aria-selected="true">Estado financiero</a>
-                    <a class="nav-link" id="v-pills-ingresos-tab" data-toggle="pill" href="#v-pills-ingresos" role="tab" aria-controls="v-pills-ingresos" aria-selected="false">Ingresos</a>
+                    <a class="nav-link" id="v-pills-estado-financiero-tab" data-toggle="pill" href="#v-pills-estado-financiero" role="tab" aria-controls="v-pills-estado-financiero" aria-selected="false">Estado financiero</a>
+                    <a class="nav-link" id="v-pills-venta-tab" data-toggle="pill" href="#v-pills-venta" role="tab" aria-controls="v-pills-venta" aria-selected="false">Venta</a>
+                    <a class="nav-link" id="v-pills-otros-ingresos-tab" data-toggle="pill" href="#v-pills-otros-ingresos" role="tab" aria-controls="v-pills-otros-ingresos" aria-selected="false">Otros ingresos</a>
                     <a class="nav-link" id="v-pills-egresos-tab" data-toggle="pill" href="#v-pills-egresos" role="tab" aria-controls="v-pills-egresos" aria-selected="false">Egresos</a>
-                    <a class="nav-link" id="v-pills-conceptos-tab" data-toggle="pill" href="#v-pills-conceptos" role="tab" aria-controls="v-pills-conceptos" aria-selected="false">Conceptos</a>
+                    <a class="nav-link active" id="v-pills-conceptos-tab" data-toggle="pill" href="#v-pills-conceptos" role="tab" aria-controls="v-pills-conceptos" aria-selected="true">Conceptos</a>
                     <a class="nav-link" id="v-pills-colaboradores-tab" data-toggle="pill" href="#v-pills-colaboradores" role="tab" aria-controls="v-pills-colaboradores" aria-selected="false">Colaboradores</a>
                     <a class="nav-link" id="v-pills-informes-tab" data-toggle="pill" href="#v-pills-informes" role="tab" aria-controls="v-pills-profile" aria-selected="false">Informes</a>
                     <a class="nav-link" id="v-pills-tareas-por-realizar-tab" data-toggle="pill" href="#v-pills-tareas-por-realizar" role="tab" aria-controls="v-pills-messages" aria-selected="false">Tareas por realizar</a>
@@ -31,88 +34,551 @@
                     <a class="nav-link" id="v-pills-inventario-tab" data-toggle="pill" href="#v-pills-inventario" role="tab" aria-controls="v-pills-inventario" aria-selected="false">Inventario</a>
                 </div>
             </div>
-            <div class="col-md-9 col-xl-10 pl-0">
-                <div class="card bg-danger border-0 barra-superior mt-4 mb-4">
-                    <div class="row justify-content-end">
-                        <p class="my-1 ml-auto mr-5 text-white">Nombre de usuario</p>
+            <!--Barra de navegación izquierda-->
+
+            <div class="col-md-9 col-xl-10 pr-0" style="overflow-x: hidden;">
+
+                <!--Barra superior de nombre-->
+                <div class="row justify-content-end">
+                    <div class="col-auto">
+                        <nav class="navbar navbar-expand-md navbar-light bg-white mt-4 py-0">
+                            <ul class="navbar-nav ml-auto mr-4">
+                                <li class="nav-item">
+                                    <a class="nav-link p-2 my-0" href="#">
+                                        <hr class="rounded-circle ic-cumple m-0">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="nav-link my-0" href="#">Nombre de usuario</p>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-2 my-0" href="#">
+                                        <hr class="rounded-circle ic-perfil m-0">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-2 my-0" href="#">
+                                        <hr class="rounded-circle ic-opciones m-0">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
+                <!--Barra superior de nombre-->
+
                 <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-estado-financiero" role="tabpanel" aria-labelledby="v-pills-estado-financiero-tab">
+
+                    <!--Contenido de estado financiero-->
+                    <div class="tab-pane fade" id="v-pills-estado-financiero" role="tabpanel" aria-labelledby="v-pills-estado-financiero-tab">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-10">
-                                    <div class="card rounded-pill border-0 bg-white shadow mt-3 mb-5">
-                                        <div class="row d-flex justify-content-between">
-                                            <p class="font-weight-bold my-1 ml-5">Estado financiero</p>
-                                            <p class="font-weight-bold my-1 mr-5 pr-5">20 - 12 - 19</p>
+
+                                    <!--Título de sección-->
+                                    <div class="card rounded-pill border-0 bg-white sombra mt-3 mb-5">
+                                        <div class="row d-flex justify-content-between letra-azul">
+                                            <p class="bold my-1 ml-5">Estado financiero</p>
+                                            <p class="my-1 mr-5 pr-5">20 - 12 - 2019</p>
                                         </div>
                                     </div>
+                                    <!--Título de sección-->
+
+                                    <!--Contenedores superiores-->
                                     <div class="row d-flex justify-content-between px-4">
                                         <div class="col-3">
-                                            <div class="card card-dashboard border-0 shadow">
-                                                <h5 class="card-header bg-dark text-white">Caja gerencia</h5>
+                                            <div class="card card-dashboard border-0 sombra">
+                                                <h5 class="card-header bg-caja-gerencia text-white px-2">Caja Gerencia</h5>
                                                 <div class="card-body">
-                                                    <div class="card-title font-weight-bold h5 text-center text-muted">S/ 700.00</div>
+                                                    <div class="card-title bold h4 text-center text-gris">S/ 700.00</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3">
-                                            <div class="card card-dashboard border-0 shadow">
-                                                <h5 class="card-header bg-info text-white">Cuenta bancaria</h5>
+                                            <div class="card card-dashboard border-0 sombra">
+                                                <h5 class="card-header bg-caja-bancaria text-white px-2">Cuenta Bancaria</h5>
                                                 <div class="card-body">
-                                                    <div class="card-title font-weight-bold h5 text-center text-muted">S/ 700.00</div>
+                                                    <div class="card-title bold h4 text-center text-gris">S/ 700.00</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3">
-                                            <div class="card card-dashboard border-0 shadow">
-                                                <h5 class="card-header bg-success text-white">Total</h5>
+                                            <div class="card card-dashboard border-0 sombra">
+                                                <h5 class="card-header bg-total text-white px-2">Total</h5>
                                                 <div class="card-body">
-                                                    <div class="card-title font-weight-bold h5 text-center text-muted">S/ 700.00</div>
+                                                    <div class="card-title bold h4 text-center text-gris">S/ 700.00</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!--Contenedores superiores-->
+
+                                    <!--Contenedores inferiores-->
                                     <div class="row d-flex justify-content-between px-4 mt-5 pt-4">
                                         <div class="col-6">
-                                            <div class="card rounded border-0 shadow">
+                                            <div class="card card-dashboard border-0 sombra">
                                                 <div class="row px-4 py-2 justify-content-center">
-                                                    <div class="col-3 badge badge-success mt-2 mr-3 py-2 text-left">Saldo cajas:</div>
-                                                    <div class="col-8 badge badge-light mt-2 py-2">S/ 700.00</div>
-                                                    <div class="col-3 badge badge-success my-2 mr-3 py-2 text-left">Ingresos:</div>
-                                                    <div class="col-8 badge badge-light my-2 py-2">S/ 700.00</div>
-                                                    <div class="col-3 badge badge-success mb-2 mr-3 py-2 text-left">Egresos:</div>
-                                                    <div class="col-8 badge badge-light mb-2 py-2">S/ 700.00</div>
+                                                    <div class="col-3 badge badge-oscuro mt-2 mr-3 py-2 pl-3 text-left">Saldo cajas:</div>
+                                                    <div class="col-8 badge badge-claro mt-2 py-2 pl-3 text-left">S/ 700.00</div>
+                                                    <div class="col-3 badge badge-oscuro my-2 mr-3 py-2 pl-3 text-left">Ingresos:</div>
+                                                    <div class="col-8 badge badge-claro my-2 py-2 pl-3 text-left">S/ 700.00</div>
+                                                    <div class="col-3 badge badge-oscuro mb-2 mr-3 py-2 pl-3 text-left">Egresos:</div>
+                                                    <div class="col-8 badge badge-claro mb-2 py-2 pl-3 text-left">S/ 700.00</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            <div class="card rounded border-0 shadow">
+                                            <div class="card card-dashboard border-0 sombra">
                                                 <div class="row px-4 py-2 justify-content-center">
-                                                    <div class="col-3 badge badge-success mt-2 mr-3 py-2 text-left">Saldo cajas:</div>
-                                                    <div class="col-8 badge badge-light mt-2 py-2">S/ 700.00</div>
-                                                    <div class="col-3 badge badge-success my-2 mr-3 py-2 text-left">Ingresos:</div>
-                                                    <div class="col-8 badge badge-light my-2 py-2">S/ 700.00</div>
-                                                    <div class="col-3 badge badge-success mb-2 mr-3 py-2 text-left">Egresos:</div>
-                                                    <div class="col-8 badge badge-light mb-2 py-2">S/ 700.00</div>
+                                                    <div class="col-3 badge badge-oscuro mt-2 mr-3 py-2 pl-3 text-left">Saldo cajas:</div>
+                                                    <div class="col-8 badge badge-claro mt-2 py-2 pl-3 text-left">S/ 700.00</div>
+                                                    <div class="col-3 badge badge-oscuro my-2 mr-3 py-2 pl-3 text-left">Ingresos:</div>
+                                                    <div class="col-8 badge badge-claro my-2 py-2 pl-3 text-left">S/ 700.00</div>
+                                                    <div class="col-3 badge badge-oscuro mb-2 mr-3 py-2 pl-3 text-left">Egresos:</div>
+                                                    <div class="col-8 badge badge-claro mb-2 py-2 pl-3 text-left">S/ 700.00</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!--Contenedores inferiores-->
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-ingresos" role="tabpanel" aria-labelledby="v-pills-ingresos-tab">
-                        <h1>Ingresos</h1>
+                    <!--Contenido de estado financiero-->
+
+                    <!--Contenido de venta-->
+                    <div class="tab-pane fade" id="v-pills-venta" role="tabpanel" aria-labelledby="v-pills-venta-tab">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-10">
+                        
+                                    <!--Título de sección-->
+                                    <div class="card rounded-pill border-0 bg-white sombra mt-3">
+                                        <div class="row d-flex letra-azul">
+                                            <p class="bold my-1 ml-5">Ingresos</p>
+                                        </div>
+                                    </div>
+                                    <!--Título de sección-->
+
+                                    <!--Combo de tipo-->
+                                    <div class="dropdown">
+                                        <a class="btn bold bg-turquesa text-white sombra dropdown-toggle rounded-pill ml-3 w-25 d-flex justify-content-between align-items-center my-3" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Tipo
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Venta</a>
+                                            <a class="dropdown-item" href="#">Otros ingresos</a>
+                                        </div>
+                                    </div>
+                                    <!--Combo de tipo-->
+
+                                    <!--Contenedor de datos-->
+                                    <div class="container ml-3">
+                                        <div class="row">
+                                            <div class="card card-dashboard mr-5 sombra border-0 px-5 py-4 w-100">
+
+                                                <!--Formulario de venta-->
+                                                <form>
+
+                                                    <!--Caja de texto para DNI / RUC-->
+                                                    <div class="form-group">
+                                                        <label for="txtDniRuc" class="bold text-gris">DNI / RUC:</label>
+                                                        <input type="text" class="form-control rounded-pill badge-claro border-0 w-25" id="txtDniRuc">
+                                                    </div>
+                                                    <!--Caja de texto para DNI / RUC-->
+
+                                                    <!--Caja de texto para nombre-->
+                                                    <div class="form-group">
+                                                        <label for="txtNombre" class="bold text-gris">Nombre completo:</label>
+                                                        <input type="text" class="form-control rounded-pill badge-claro border-0 w-75" id="txtNombre">
+                                                    </div>
+                                                    <!--Caja de texto para nombre-->
+
+                                                    <div class="row">
+                                                        <div class="col-9">
+                                                            
+                                                            <!--Lista desplegable para items de venta-->
+                                                            <div class="form-group">
+                                                                <label for="txtItemsVenta" class="bold text-gris">Items de venta:</label>
+                                                                <div class="dropdown">
+                                                                    <a class="btn bold badge-claro dropdown-toggle rounded-pill d-flex justify-content-end align-items-center py-3"
+                                                                        href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                                                        aria-expanded="false">
+                                                                    </a>
+                                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                        <a class="dropdown-item" href="#">Item 1</a>
+                                                                        <a class="dropdown-item" href="#">Item 2</a>
+                                                                        <a class="dropdown-item" href="#">Item 3</a>
+                                                                        <a class="dropdown-item" href="#">Item 4</a>
+                                                                        <a class="dropdown-item" href="#">Item 5</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--Lista desplegable para items de venta-->
+
+                                                        </div>
+                                                        <div class="col-3">
+                                                            
+                                                            <!--Caja de texto para cantidad-->
+                                                            <div class="form-group">
+                                                                <label for="txtCantidad" class="bold text-gris">Cantidad :</label>
+                                                                <input type="text" class="form-control rounded-pill badge-claro border-0" id="txtCantidad">
+                                                            </div>
+                                                            <!--Caja de texto para cantidad-->
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="row justify-content-end">
+                                                        
+                                                        <!--Botón para agregar al carrito-->
+                                                        <div class="col-3">
+                                                            <button class="btn btn-azul rounded-pill text-white bold w-100 my-2" type="submit">Agregar al Carrito</button>
+                                                        </div>
+                                                        <!--Botón para agregar al carrito-->
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Contenedor de datos personales-->
+
+                                    <!--Relación de cosas-->
+                                    <div class="container">
+                                        <h5 class="titulo text-azul my-3">Relación de Cosas</h5>
+                                        <div class="panel panel-default card card-dashboard border-0 sombra mr-3">
+                                            <table class="table table-hover">
+                                                <thead class="thead-verde rounded-pill bold">
+                                                    <tr class="text-white">
+                                                        <th scope="col">Producto</th>
+                                                        <th scope="col">Cantidad</th>
+                                                        <th scope="col">Precio</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="pl-5">
+                                                    <tr>
+                                                        <td>1. GPS Vespro</td>
+                                                        <td>1</td>
+                                                        <td>S/ 60.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2. GPS Vespro</td>
+                                                        <td>1</td>
+                                                        <td>S/ 60.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <!--Botón guardar-->
+                                        <div clas="row">
+                                            <div class="col-3 ml-auto">
+                                                <button class="btn btn-azul text-white bold w-100 rounded-pill sombra my-4">Guardar</button>
+                                            </div>
+                                        </div>
+                                        <!--Botón guardar-->
+
+                                    </div>
+                                    <!--Relación de cosas-->
+                        
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!--Contenido de venta-->
+
+                    <!--Cotenido de otros ingresos-->
+                    <div class="tab-pane fade" id="v-pills-otros-ingresos" role="tabpanel" aria-labelledby="v-pills-otros-ingresos-tab">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-10">
+                    
+                                    <!--Título de sección-->
+                                    <div class="card rounded-pill border-0 bg-white sombra mt-3">
+                                        <div class="row d-flex letra-azul">
+                                            <p class="bold my-1 ml-5">Ingresos</p>
+                                        </div>
+                                    </div>
+                                    <!--Título de sección-->
+                    
+                                    <!--Combo de tipo-->
+                                    <div class="dropdown">
+                                        <a class="btn bold bg-turquesa text-white sombra dropdown-toggle rounded-pill ml-3 w-25 d-flex justify-content-between align-items-center my-3"
+                                            href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Tipo
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Venta</a>
+                                            <a class="dropdown-item" href="#">Otros ingresos</a>
+                                        </div>
+                                    </div>
+                                    <!--Combo de tipo-->
+                    
+                                    <!--Contenedor de datos-->
+                                    <div class="container ml-3">
+                                        <div class="row">
+                                            <div class="card card-dashboard mr-5 sombra border-0 px-5 py-4 w-100">
+                    
+                                                <!--Formulario de venta-->
+                                                <form>
+                    
+                                                    <!--Caja de texto para DNI / RUC-->
+                                                    <div class="form-group">
+                                                        <label for="txtDniRuc" class="bold text-gris">DNI / RUC:</label>
+                                                        <input type="text" class="form-control rounded-pill badge-claro border-0 w-25"
+                                                            id="txtDniRuc">
+                                                    </div>
+                                                    <!--Caja de texto para DNI / RUC-->
+                    
+                                                    <!--Caja de texto para nombre-->
+                                                    <div class="form-group">
+                                                        <label for="txtNombre" class="bold text-gris">Nombre completo:</label>
+                                                        <input type="text" class="form-control rounded-pill badge-claro border-0 w-75"
+                                                            id="txtNombre">
+                                                    </div>
+                                                    <!--Caja de texto para nombre-->
+                    
+                                                    <div class="row">
+                                                        <div class="col-9">
+                    
+                                                            <!--Lista desplegable para items de venta-->
+                                                            <div class="form-group">
+                                                                <label for="txtItemsVenta" class="bold text-gris">Items de venta:</label>
+                                                                <div class="dropdown">
+                                                                    <a class="btn bold badge-claro dropdown-toggle rounded-pill d-flex justify-content-end align-items-center py-3"
+                                                                        href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                                                        aria-haspopup="true" aria-expanded="false">
+                                                                    </a>
+                                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                        <a class="dropdown-item" href="#">Item 1</a>
+                                                                        <a class="dropdown-item" href="#">Item 2</a>
+                                                                        <a class="dropdown-item" href="#">Item 3</a>
+                                                                        <a class="dropdown-item" href="#">Item 4</a>
+                                                                        <a class="dropdown-item" href="#">Item 5</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--Lista desplegable para items de venta-->
+                    
+                                                        </div>
+                                                        <div class="col-3">
+                    
+                                                            <!--Caja de texto para cantidad-->
+                                                            <div class="form-group">
+                                                                <label for="txtCantidad" class="bold text-gris">Cantidad :</label>
+                                                                <input type="text" class="form-control rounded-pill badge-claro border-0"
+                                                                    id="txtCantidad">
+                                                            </div>
+                                                            <!--Caja de texto para cantidad-->
+                    
+                                                        </div>
+                                                    </div>
+                                                    <div class="row justify-content-end">
+                    
+                                                        <!--Botón para agregar al carrito-->
+                                                        <div class="col-3">
+                                                            <button class="btn btn-azul rounded-pill text-white bold w-100 my-2"
+                                                                type="submit">Agregar al Carrito</button>
+                                                        </div>
+                                                        <!--Botón para agregar al carrito-->
+                    
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Contenedor de datos personales-->
+                    
+                                    <!--Relación de cosas-->
+                                    <div class="container">
+                                        <h5 class="titulo text-azul my-3">Relación de Cosas</h5>
+                                        <div class="panel panel-default card card-dashboard border-0 sombra mr-3">
+                                            <table class="table table-hover">
+                                                <thead class="thead-verde rounded-pill bold">
+                                                    <tr class="text-white">
+                                                        <th scope="col">Producto</th>
+                                                        <th scope="col">Cantidad</th>
+                                                        <th scope="col">Precio</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="pl-5">
+                                                    <tr>
+                                                        <td>1. GPS Vespro</td>
+                                                        <td>1</td>
+                                                        <td>S/ 60.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2. GPS Vespro</td>
+                                                        <td>1</td>
+                                                        <td>S/ 60.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                    
+                                        <!--Botón guardar-->
+                                        <div clas="row">
+                                            <div class="col-3 ml-auto">
+                                                <button class="btn btn-azul text-white bold w-100 rounded-pill sombra my-4">Guardar</button>
+                                            </div>
+                                        </div>
+                                        <!--Botón guardar-->
+                    
+                                    </div>
+                                    <!--Relación de cosas-->
+                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Contenido de otros ingresos-->
+
+                    <!--Contenido de egresos-->
                     <div class="tab-pane fade" id="v-pills-egresos" role="tabpanel" aria-labelledby="v-pills-egresos-tab">
-                        <h1>Egresos</h1>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-10">
+
+                                    <!--Lista desplegable con el título de sección-->
+                                    <div class="dropdown">
+                                        <a class="btn bold bg-white text-azul sombra dropdown-toggle rounded-pill ml-3 mt-3 d-flex align-items-center justify-content-between text-azul"
+                                            href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Inversión
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Inversión</a>
+                                            <a class="dropdown-item" href="#">Otros egresos</a>
+                                        </div>
+                                    </div>
+                                    <!--Lista desplegable con el título de sección-->
+                                
+                                </div>
+                                
+                                <!--Formulario de registro de egresos-->
+                                <div class="col-8">
+                                    <div class="card card-dashboard border-0 sombra my-5 p-3">
+                                        <form style="position: relative;">
+                                            <div class="form-group">
+                                                <label for="txtRazonSocial" class="bold text-gris">Razón Social:</label>
+                                                <input type="text" class="form-control rounded-pill border-0 badge-claro" id="txtRazonSocial">
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-6 pr-4">
+                                                    <label for="txtNDocumento" class="bold text-gris">N° de Documento:</label>
+                                                    <input type="text" class="form-control rounded-pill border-0 badge-claro" id="txtNDocumento">
+                                                </div>
+                                                <div class="col-6 pl-4">
+                                                    <label for="txtTipoDocumento" class="bold text-gris">Tipo de Documento:</label>
+                                                    <input type="text" class="form-control rounded-pill border-0 badge-claro" id="txtTipoDocumento">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="txtConcepto" class="bold text-gris">Concepto:</label>
+                                                <input type="text" class="form-control rounded-pill border-0 badge-claro" id="txtConcepto">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="txtDescripcion" class="bold text-gris">Descripción:</label>
+                                                <input type="text" class="form-control rounded-pill border-0 badge-claro" id="txtDescripcion">
+                                            </div>
+                                            <div class="form group">
+                                                <label class="bold text-gris">Total:</label>
+                                                <div class="rounded-pill border-0 bg-turquesa py-2 text-center text-white mb-4">S/ 0.00</div>
+                                            </div>
+                                            <div class="btn btn-azul rounded-pill px-5 text-white bold" style="position: absolute; bottom: -8%; left: 38%;">Guardar</div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!--Formulario de registro de egresos-->
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-conceptos" role="tabpanel" aria-labelledby="v-pills-conceptos-tab">
-                        <h1>Conceptos</h1>
+                    <!--Contenido de egresos-->
+
+                    <!--Contenido de conceptos-->
+                    <div class="tab-pane fade show active" id="v-pills-conceptos" role="tabpanel" aria-labelledby="v-pills-conceptos-tab">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-10">
+                            
+                                    <!--Lista desplegable con el título de sección-->
+                                    <div class="dropdown">
+                                        <a class="btn bold bg-white text-azul sombra dropdown-toggle rounded-pill ml-3 mt-3 d-flex align-items-center justify-content-between text-azul"
+                                            href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Ingreso
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Ingreso 1</a>
+                                            <a class="dropdown-item" href="#">Ingreso 2</a>
+                                        </div>
+                                    </div>
+                                    <!--Lista desplegable con el título de sección-->
+                            
+                                </div>
+
+                                <!--Nombre y tipo de conceptos-->
+                                <div class="col-5">
+                                    <div class="card card-dashboard sombra border-0 m-5 p-3">
+                                        <form style="position: relative;">
+                                            <div class="form-group">
+                                                <label for="txtNombreConcepto" class="bold text-gris">Nombre de Concepto</label>
+                                                <input type="text" class="form-control border-0 badge-claro rounded-pill">
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label for="txtTipoConcepto" class="bold text-gris">Tipo de Concepto</label>
+                                                <input type="text" class="form-control border-0 badge-claro rounded-pill">
+                                            </div>
+                                            <button type="submit" class="btn bg-azul text-white bold rounded-pill px-5" style="position:absolute; bottom: -20%; left: 25%;">Guardar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!--Nombre y tipo de conceptos-->
+
+                                <!--Lista de conceptos-->
+                                <div class="col-8">
+                                    <div class="panel panel-default card card-dashboard border-0 sombra mr-3" style="position: relative;">
+                                        <div class="card-header bg-turquesa text-white text-center bold">Lista de conceptos</div>
+                                        <table class="table table-sm table-hover table-striped text-center">
+                                            <thead class="text-gris bold">
+                                                <tr>
+                                                    <th scope="col" class="border-0 pl-2">#</th>
+                                                    <th scope="col" class="border-0">Nombre concepto</th>
+                                                    <th scope="col" class="border-0 pr-2">Tipo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="pl-2">1</td>
+                                                    <td></td>
+                                                    <td class="pr-2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl-2">2</td>
+                                                    <td></td>
+                                                    <td class="pr-2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl-2">3</td>
+                                                    <td></td>
+                                                    <td class="pr-2"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <button class="btn btn-azul text-white bold rounded-pill sombra my-4 px-5" style="position: absolute; bottom: -24%; left: 40%;">Guardar</button>
+                                    </div>                                
+                                </div>
+                                <!--Lista de conceptos-->
+
+                            </div>
+                        </div>
                     </div>
+                    <!--Contenido de conceptos-->
+
                     <div class="tab-pane fade" id="v-pills-colaboradores" role="tabpanel" aria-labelledby="v-pills-colaboradores-tab">
                         <h1>Colaboradores</h1>
                     </div>
