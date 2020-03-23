@@ -22,7 +22,8 @@
                     <a class="nav-link active" id="v-pills-estado-financiero-tab" data-toggle="pill" href="#v-pills-estado-financiero" role="tab" aria-controls="v-pills-estado-financiero" aria-selected="true">Estado financiero</a>
                     <a class="nav-link" id="v-pills-venta-tab" data-toggle="pill" href="#v-pills-venta" role="tab" aria-controls="v-pills-venta" aria-selected="false">Venta</a>
                     <a class="nav-link" id="v-pills-otros-ingresos-tab" data-toggle="pill" href="#v-pills-otros-ingresos" role="tab" aria-controls="v-pills-otros-ingresos" aria-selected="false">Otros ingresos</a>
-                    <a class="nav-link" id="v-pills-egresos-tab" data-toggle="pill" href="#v-pills-egresos" role="tab" aria-controls="v-pills-egresos" aria-selected="false">Egresos</a>
+                    <a class="nav-link" id="v-pills-inversion-tab" data-toggle="pill" href="#v-pills-inversion" role="tab" aria-controls="v-pills-inversion" aria-selected="false">Inversión</a>
+                    <a class="nav-link" id="v-pills-otros-egresos-tab" data-toggle="pill" href="#v-pills-otros-egresos" role="tab" aria-controls="v-pills-otros-egresos" aria-selected="false">Otros egresos</a>
                     <a class="nav-link" id="v-pills-conceptos-tab" data-toggle="pill" href="#v-pills-conceptos" role="tab" aria-controls="v-pills-conceptos" aria-selected="false">Conceptos</a>
                     <a class="nav-link" id="v-pills-colaboradores-tab" data-toggle="pill" href="#v-pills-colaboradores" role="tab" aria-controls="v-pills-colaboradores" aria-selected="false">Colaboradores</a>
                     <a class="nav-link" id="v-pills-informes-tab" data-toggle="pill" href="#v-pills-informes" role="tab" aria-controls="v-pills-profile" aria-selected="false">Informes</a>
@@ -166,11 +167,11 @@
                                     <div class="dropdown">
                                         <a class="btn bold bg-turquesa text-white sombra dropdown-toggle rounded-pill ml-3 w-25 d-flex justify-content-between align-items-center my-3" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
-                                            Tipo
+                                            Tipo de comprobante
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Venta</a>
-                                            <a class="dropdown-item" href="#">Otros ingresos</a>
+                                            <a class="dropdown-item" href="#">Boleta</a>
+                                            <a class="dropdown-item" href="#">Factura</a>
                                         </div>
                                     </div>
                                     <!--Combo de tipo-->
@@ -192,7 +193,7 @@
 
                                                     <!--Caja de texto para nombre-->
                                                     <div class="form-group">
-                                                        <label for="txtNombre" class="bold text-gris">Nombre completo:</label>
+                                                        <label for="txtNombre" class="bold text-gris">Nombre / Razón Social:</label>
                                                         <input type="text" class="form-control rounded-pill badge-claro border-0 w-75" id="txtNombre">
                                                     </div>
                                                     <!--Caja de texto para nombre-->
@@ -309,11 +310,11 @@
                                         <a class="btn bold bg-turquesa text-white sombra dropdown-toggle rounded-pill ml-3 w-25 d-flex justify-content-between align-items-center my-3"
                                             href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
-                                            Tipo
+                                            Tipo de comprobante
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Venta</a>
-                                            <a class="dropdown-item" href="#">Otros ingresos</a>
+                                            <a class="dropdown-item" href="#">Boleta</a>
+                                            <a class="dropdown-item" href="#">Factura</a>
                                         </div>
                                     </div>
                                     <!--Combo de tipo-->
@@ -336,7 +337,7 @@
                     
                                                     <!--Caja de texto para nombre-->
                                                     <div class="form-group">
-                                                        <label for="txtNombre" class="bold text-gris">Nombre completo:</label>
+                                                        <label for="txtNombre" class="bold text-gris">Nombre / Razón Social:</label>
                                                         <input type="text" class="form-control rounded-pill badge-claro border-0 w-75"
                                                             id="txtNombre">
                                                     </div>
@@ -437,8 +438,8 @@
                     </div>
                     <!--Contenido de otros ingresos-->
 
-                    <!--Contenido de egresos-->
-                    <div class="tab-pane fade" id="v-pills-egresos" role="tabpanel" aria-labelledby="v-pills-egresos-tab">
+                    <!--Contenido de inversión-->
+                    <div class="tab-pane fade" id="v-pills-inversion" role="tabpanel" aria-labelledby="v-pills-inversion-tab">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-10">
@@ -483,6 +484,15 @@
                                             <div class="form-group">
                                                 <label for="txtDescripcion" class="bold text-gris">Descripción:</label>
                                                 <input type="text" class="form-control rounded-pill border-0 badge-claro" id="txtDescripcion">
+                                            </div><div class="row mb-3">
+                                                <div class="col-6 pr-4">
+                                                    <label for="txtPrecio" class="bold text-gris">Precio:</label>
+                                                    <input type="text" class="form-control rounded-pill border-0 badge-claro" id="txtPrecio">
+                                                </div>
+                                                <div class="col-6 pl-4">
+                                                    <label for="txtCantidad" class="bold text-gris">Cantidad:</label>
+                                                    <input type="text" class="form-control rounded-pill border-0 badge-claro" id="txtCantidad">
+                                                </div>
                                             </div>
                                             <div class="form group">
                                                 <label class="bold text-gris">Total:</label>
@@ -497,7 +507,86 @@
                             </div>
                         </div>
                     </div>
-                    <!--Contenido de egresos-->
+                    <!--Contenido de inversión-->
+
+                    <!--Contenido de otros egresos-->
+                    <div class="tab-pane fade" id="v-pills-otros-egresos" role="tabpanel" aria-labelledby="v-pills-otros-egresos-tab">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-10">
+                    
+                                    <!--Lista desplegable con el título de sección-->
+                                    <div class="dropdown">
+                                        <a class="btn bold bg-white text-azul sombra dropdown-toggle rounded-pill ml-3 mt-3 d-flex align-items-center justify-content-between text-azul"
+                                            href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Otros egresos
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Inversión</a>
+                                            <a class="dropdown-item" href="#">Otros egresos</a>
+                                        </div>
+                                    </div>
+                                    <!--Lista desplegable con el título de sección-->
+                    
+                                </div>
+                    
+                                <!--Formulario de registro de egresos-->
+                                <div class="col-8">
+                                    <div class="card card-dashboard border-0 sombra my-5 p-3">
+                                        <form style="position: relative;">
+                                            <div class="form-group">
+                                                <label for="txtRazonSocial" class="bold text-gris">Razón Social:</label>
+                                                <input type="text" class="form-control rounded-pill border-0 badge-claro"
+                                                    id="txtRazonSocial">
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-6 pr-4">
+                                                    <label for="txtNDocumento" class="bold text-gris">N° de Documento:</label>
+                                                    <input type="text" class="form-control rounded-pill border-0 badge-claro"
+                                                        id="txtNDocumento">
+                                                </div>
+                                                <div class="col-6 pl-4">
+                                                    <label for="txtTipoDocumento" class="bold text-gris">Tipo de Documento:</label>
+                                                    <input type="text" class="form-control rounded-pill border-0 badge-claro"
+                                                        id="txtTipoDocumento">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="txtConcepto" class="bold text-gris">Concepto:</label>
+                                                <input type="text" class="form-control rounded-pill border-0 badge-claro" id="txtConcepto">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="txtDescripcion" class="bold text-gris">Descripción:</label>
+                                                <input type="text" class="form-control rounded-pill border-0 badge-claro"
+                                                    id="txtDescripcion">
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-6 pr-4">
+                                                    <label for="txtPrecio" class="bold text-gris">Precio:</label>
+                                                    <input type="text" class="form-control rounded-pill border-0 badge-claro" id="txtPrecio">
+                                                </div>
+                                                <div class="col-6 pl-4">
+                                                    <label for="txtCantidad" class="bold text-gris">Cantidad:</label>
+                                                    <input type="text" class="form-control rounded-pill border-0 badge-claro" id="txtCantidad">
+                                                </div>
+                                            </div>
+                                            <div class="form group">
+                                                <label class="bold text-gris">Total:</label>
+                                                <div class="rounded-pill border-0 bg-turquesa py-2 text-center text-white mb-4">S/ 0.00
+                                                </div>
+                                            </div>
+                                            <div class="btn btn-azul rounded-pill px-5 text-white bold"
+                                                style="position: absolute; bottom: -8%; left: 38%;">Guardar</div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!--Formulario de registro de egresos-->
+                    
+                            </div>
+                        </div>
+                    </div>
+                    <!--Contenido de otros egresos-->
 
                     <!--Contenido de conceptos-->
                     <div class="tab-pane fade" id="v-pills-conceptos" role="tabpanel" aria-labelledby="v-pills-conceptos-tab">
@@ -513,8 +602,8 @@
                                             Ingreso
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Ingreso 1</a>
-                                            <a class="dropdown-item" href="#">Ingreso 2</a>
+                                            <a class="dropdown-item" href="#">Ingreso</a>
+                                            <a class="dropdown-item" href="#">Egreso</a>
                                         </div>
                                     </div>
                                     <!--Lista desplegable con el título de sección-->
@@ -579,9 +668,145 @@
                     </div>
                     <!--Contenido de conceptos-->
 
+                    <!--Contenido de colaboradores-->
                     <div class="tab-pane fade" id="v-pills-colaboradores" role="tabpanel" aria-labelledby="v-pills-colaboradores-tab">
-                        <h1>Colaboradores</h1>
+                        <div class="row justify-content-center"  style="position: relative;">
+                            <div class="col-10">
+                                <div class="row justify-content-end">
+                                    <div class="btn btn-verde rounded-pill text-white sombra px-4 bold py-1 my-4 mr-3">Registrar Nuevo</div>
+                                </div>
+                                <div class="card card-dashboard sombra">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="thead-verde text-white">
+                                                <th scope="col" class="pl-4 pt-4">Usuarios</th>
+                                                <th scope="col">Celular</th>
+                                                <th scope="col">Rol</th>
+                                                <th scope="col" class="text-center">Detalles</th>
+                                                <th scope="col" class="text-center pr-4">Estado</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="pl-4 py-2">Juan Carlos Severino Ordoñez</th>
+                                                <td class="py-2">965 256 487</td>
+                                                <td class="py-2">Administrador</td>
+                                                <td class="py-2 text-center">
+                                                    <button class="btn rounded-circle border-0 p-0">
+                                                        <hr class="rounded-circle ic-cumple m-0">
+                                                    </button>
+                                                </td>
+                                                <td class="pr-4 py-2 text-center">
+                                                    <button class="btn rounded-circle border-0 p-0">
+                                                        <hr class="rounded-circle ic-perfil m-0">
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pl-4 py-2">Juan Carlos Severino Ordoñez</th>
+                                                <td class="py-2">965 256 487</td>
+                                                <td class="py-2">Administrador</td>
+                                                <td class="py-2 text-center">
+                                                    <button class="btn rounded-circle border-0 p-0">
+                                                        <hr class="rounded-circle ic-cumple my-0">
+                                                    </button>
+                                                </td>
+                                                <td class="pr-4 py-2 text-center">
+                                                    <button class="btn rounded-circle border-0 p-0">
+                                                        <hr class="rounded-circle ic-perfil m-0">
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pl-4 py-2">Juan Carlos Severino Ordoñez</th>
+                                                <td class="py-2">965 256 487</td>
+                                                <td class="py-2">Administrador</td>
+                                                <td class="py-2 text-center">
+                                                    <button class="btn rounded-circle border-0 p-0">
+                                                        <hr class="rounded-circle ic-cumple my-0">
+                                                    </button>
+                                                </td>
+                                                <td class="pr-4 py-2 text-center">
+                                                    <button class="btn rounded-circle border-0 p-0">
+                                                        <hr class="rounded-circle ic-perfil m-0">
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pl-4 py-2">Juan Carlos Severino Ordoñez</th>
+                                                <td class="py-2">965 256 487</td>
+                                                <td class="py-2">Administrador</td>
+                                                <td class="py-2 text-center">
+                                                    <button class="btn rounded-circle border-0 p-0">
+                                                        <hr class="rounded-circle ic-cumple my-0">
+                                                    </button>
+                                                </td>
+                                                <td class="pr-4 py-2 text-center">
+                                                    <button class="btn rounded-circle border-0 p-0">
+                                                        <hr class="rounded-circle ic-perfil m-0">
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pl-4 py-2">Juan Carlos Severino Ordoñez</th>
+                                                <td class="py-2">965 256 487</td>
+                                                <td class="py-2">Administrador</td>
+                                                <td class="py-2 text-center">
+                                                    <button class="btn rounded-circle border-0 p-0">
+                                                        <hr class="rounded-circle ic-cumple my-0">
+                                                    </button>
+                                                </td>
+                                                <td class="pr-4 py-2 text-center">
+                                                    <button class="btn rounded-circle border-0 p-0">
+                                                        <hr class="rounded-circle ic-perfil m-0">
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pl-4 py-2">Juan Carlos Severino Ordoñez</th>
+                                                <td class="py-2">965 256 487</td>
+                                                <td class="py-2">Administrador</td>
+                                                <td class="py-2 text-center">
+                                                    <button class="btn rounded-circle border-0 p-0">
+                                                        <hr class="rounded-circle ic-cumple my-0">
+                                                    </button>
+                                                </td>
+                                                <td class="pr-4 py-2 text-center">
+                                                    <button class="btn rounded-circle border-0 p-0">
+                                                        <hr class="rounded-circle ic-perfil m-0">
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pl-4 py-2">Juan Carlos Severino Ordoñez</th>
+                                                <td class="py-2">965 256 487</td>
+                                                <td class="py-2">Administrador</td>
+                                                <td class="py-2 text-center">
+                                                    <button class="btn rounded-circle border-0 p-0">
+                                                        <hr class="rounded-circle ic-cumple my-0">
+                                                    </button>
+                                                </td>
+                                                <td class="pr-4 py-2 text-center">
+                                                    <button class="btn rounded-circle border-0 p-0">
+                                                        <hr class="rounded-circle ic-perfil m-0">
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-3" style="position: absolute; top: 15%; left: 15%;">
+                                <div class="card rounded-pill border-0 bg-white">
+                                    <div class="row d-flex justify-content-between text-turquesa">
+                                        <h5 class="bold my-1 mx-auto">Lista de colaboradores</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!--Contenido de colaboradores-->
+
                     <div class="tab-pane fade" id="v-pills-informes" role="tabpanel" aria-labelledby="v-pills-informes-tab">
                         <h1>Informes</h1>
                     </div>

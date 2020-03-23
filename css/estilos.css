@@ -132,4 +132,13 @@ body {
 
 .thead-verde {
     background-color: #4ac2b9;
+    border-radius: 20px 0 0 20px;
+}
+
+.btn-verde {
+    background-color: #42e695;
+}
+
+.text-turquesa {
+    color: #4ac2b9;
 }
