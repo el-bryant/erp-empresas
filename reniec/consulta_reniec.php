@@ -11,8 +11,8 @@ error_reporting(E_ALL ^ E_NOTICE);
 $dni = $_POST['dni'];
  
 //OBTENEMOS EL VALOR
-$consulta = file_get_html('http://aplicaciones007.jne.gob.pe/srop_publico/Consulta/Afiliado/GetNombresCiudadano?DNI='.$dni)->plaintext;
-//$consulta = file_get_html('https://eldni.com/buscar-por-dni?dni='.$dni);
+//$consulta = file_get_html('http://aplicaciones007.jne.gob.pe/srop_publico/Consulta/Afiliado/GetNombresCiudadano?DNI='.$dni)->plaintext;
+$consulta = file_get_html('https://eldni.com/buscar-por-dni?dni='.$dni);
  
 $datosnombres = array();
 foreach($consulta->find('td') as $header) {
