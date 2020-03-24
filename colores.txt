@@ -13,7 +13,7 @@ Letras información: #808080
 Botón estado activo: #42e695
 Botón estado inactivo: #cccccc
 Botón word: #586fc4
-Botón pdf: #013239
+Botón pdf: #D13239
 Color botón excel: #3bbe28
 Color botón buscar: #17ead4
 Color palabra administrador: #929dc6

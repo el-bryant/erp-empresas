@@ -17,7 +17,7 @@
         <div class="row">
 
             <!--Barra de navegación izquierda-->
-            <div class="col-md-3 col-xl-2 bg-azul pr-0 vh-100">
+            <div class="col-md-3 col-xl-2 bg-azul pr-0 vh-150">
                 <div class="nav flex-column nav-pills mt-5 pt-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a class="nav-link active" id="v-pills-estado-financiero-tab" data-toggle="pill" href="#v-pills-estado-financiero" role="tab" aria-controls="v-pills-estado-financiero" aria-selected="true">Estado financiero</a>
                     <a class="nav-link" id="v-pills-venta-tab" data-toggle="pill" href="#v-pills-venta" role="tab" aria-controls="v-pills-venta" aria-selected="false">Venta</a>
@@ -27,8 +27,11 @@
                     <a class="nav-link" id="v-pills-conceptos-tab" data-toggle="pill" href="#v-pills-conceptos" role="tab" aria-controls="v-pills-conceptos" aria-selected="false">Conceptos</a>
                     <a class="nav-link" id="v-pills-colaboradores-tab" data-toggle="pill" href="#v-pills-colaboradores" role="tab" aria-controls="v-pills-colaboradores" aria-selected="false">Colaboradores</a>
                     <a class="nav-link" id="v-pills-informes-tab" data-toggle="pill" href="#v-pills-informes" role="tab" aria-controls="v-pills-profile" aria-selected="false">Informes</a>
-                    <a class="nav-link" id="v-pills-tareas-por-realizar-tab" data-toggle="pill" href="#v-pills-tareas-por-realizar" role="tab" aria-controls="v-pills-messages" aria-selected="false">Tareas por realizar</a>
-                    <a class="nav-link" id="v-pills-contactos-tab" data-toggle="pill" href="#v-pills-contactos" role="tab" aria-controls="v-pills-contactos" aria-selected="false">Contactos</a>
+                    <a class="nav-link" id="v-pills-tareas-por-realizar-tab" data-toggle="pill" href="#v-pills-tareas-por-realizar" role="tab" aria-controls="v-pills-messages" aria-selected="false">Tareas a realizar</a>
+                    <a class="nav-link" id="v-pills-usuarios-tab" data-toggle="pill" href="#v-pills-usuarios" role="tab" aria-controls="v-pills-usuarios" aria-selected="false">Usuarios</a>
+                    <a class="nav-link" id="v-pills-clientes-tab" data-toggle="pill" href="#v-pills-clientes" role="tab" aria-controls="v-pills-clientes" aria-selected="false">Clientes</a>
+                    <a class="nav-link" id="v-pills-prospectos-tab" data-toggle="pill" href="#v-pills-prospectos" role="tab" aria-controls="v-pills-prospectos" aria-selected="false">Prospectos</a>
+                    <a class="nav-link" id="v-pills-proveedores-tab" data-toggle="pill" href="#v-pills-proveedores" role="tab" aria-controls="v-pills-proveedores" aria-selected="false">Proveedores</a>
                     <a class="nav-link" id="v-pills-notificaciones-tab" data-toggle="pill" href="#v-pills-notificaciones" role="tab" aria-controls="v-pills-notificaciones" aria-selected="false">Notificaciones</a>
                     <a class="nav-link" id="v-pills-calendario-tab" data-toggle="pill" href="#v-pills-calendario" role="tab" aria-controls="v-pills-calendario" aria-selected="false">Calendario</a>
                     <a class="nav-link" id="v-pills-configuracion-tab" data-toggle="pill" href="#v-pills-configuracion" role="tab" aria-controls="v-pills-configuracion" aria-selected="false">Configuración</a>
@@ -672,10 +675,16 @@
                     <div class="tab-pane fade" id="v-pills-colaboradores" role="tabpanel" aria-labelledby="v-pills-colaboradores-tab">
                         <div class="row justify-content-center"  style="position: relative;">
                             <div class="col-10">
+                                
+                                <!--Botón para registrar nuevo colaborador-->
                                 <div class="row justify-content-end">
                                     <div class="btn btn-verde rounded-pill text-white sombra px-4 bold py-1 my-4 mr-3">Registrar Nuevo</div>
                                 </div>
+                                <!--Botón para registrar nuevo colaborador-->
+
                                 <div class="card card-dashboard sombra">
+
+                                    <!--Tabla lista de colaboradores-->
                                     <table class="table">
                                         <thead>
                                             <tr class="thead-verde text-white">
@@ -794,8 +803,12 @@
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <!--Tabla lista de colaboradores-->
+
                                 </div>
                             </div>
+                            
+                            <!--Título de tabla lista de colaboradores-->
                             <div class="col-3" style="position: absolute; top: 15%; left: 15%;">
                                 <div class="card rounded-pill border-0 bg-white">
                                     <div class="row d-flex justify-content-between text-turquesa">
@@ -803,19 +816,431 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--Título de tabla lista de colaboradores-->
+
                         </div>
                     </div>
                     <!--Contenido de colaboradores-->
 
+                    <!--Contenido de informes-->
                     <div class="tab-pane fade" id="v-pills-informes" role="tabpanel" aria-labelledby="v-pills-informes-tab">
-                        <h1>Informes</h1>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                
+                                <!--Título de sección-->
+                                <div class="col-10">
+                                    <div class="bold bg-white text-azul sombra rounded-pill mt-3 mb-5 d-flex align-items-center justify-content-between text-azul py-2 pl-3">Egresos</div>
+                                </div>
+                                <!--Título de sección-->
+                        
+                                <div class="col-10 ml-3">
+                                    <div class="card card-dashboard border-0 sombra mr-3">
+
+                                        <!--Lista de conceptos-->
+                                        <table class="table table-sm table-hover table-striped text-center">
+                                            <thead class="bg-turquesa border-0 bold">
+                                                <tr class="text-white">
+                                                    <th scope="col" class="border-0 pl-2" style="border-radius: 15px 0 0 0;">Fecha</th>
+                                                    <th scope="col" class="border-0">Documento</th>
+                                                    <th scope="col" class="border-0">Proveedor</th>
+                                                    <th scope="col" class="border-0">Total</th>
+                                                    <th scope="col" class="border-0 pr-2" style="border-radius: 0 15px 0 0;">Detalle</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="pl-2">2019-08-29 13:12:45</td>
+                                                    <td>455585</td>
+                                                    <td>Tokio</td>
+                                                    <td>S/ 23 000.00</td>
+                                                    <td class="pr-2 text-center">
+                                                        <button class="btn rounded-circle border-0 p-0">
+                                                            <hr class="rounded-circle ic-perfil m-0">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!--Lista de conceptos-->
+
+                                    </div>
+
+                                    <!--Total-->
+                                    <div class="row justify-content-end">
+                                        <div class="col-auto mr-3">
+                                            <div class="card bg-azul text-white bold rounded-pill sombra my-4 px-3 py-1">Total: S/ 23 000.00</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Total-->
+
+                                </div>
+                        
+                            </div>
+                        </div>
                     </div>
+                    <!--Contenido de informes-->
+
+                    <!--Contenido de tareas a realizar-->
                     <div class="tab-pane fade" id="v-pills-tareas-por-realizar" role="tabpanel" aria-labelledby="v-pills-tareas-por-realizar-tab">
-                        <h1>Tareas por realizar</h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-10 mx-auto">
+
+                                    <!--Título de sección-->
+                                    <div class="bold bg-white text-azul sombra rounded-pill mt-3 mb-4 d-flex align-items-center justify-content-between text-azul py-2 pl-3">Cuentas por cobrar</div>
+                                    <!--Título de sección-->
+
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto ml-3">
+                                            <div class="row">
+                                                
+                                                <!--Cuadro de búsqueda-->
+                                                <div class="card card-dashboard border-0 sombra p-0 mr-3">
+                                                    <input type="text" class="form-control border-0 card-dashboard" placeholder="Escribe Nombre del producto">
+                                                </div>
+                                                <!--Cuadro de búsqueda-->
+
+                                                <!--Botón de búsqueda-->
+                                                <button class="btn bg-buscar rounded-circle text-white sombra">O</button>
+                                                <!--Botón de búsqueda-->
+
+                                            </div>
+                                        </div>
+                                        
+                                        <!--Botonera de herramientas-->
+                                        <div class="col-auto mr-3">
+                                            <div class="row">
+
+                                                <!--Botón de Word-->
+                                                <button class="btn bg-word rounded-circle text-white sombra mx-2">O</button>
+                                                <!--Botón de Word-->
+
+                                                <!--Botón de PDF-->
+                                                <button class="btn bg-pdf rounded-circle text-white sombra mx-2">O</button>
+                                                <!--Botón de PDF-->
+
+                                                <!--Botón de Excel-->
+                                                <button class="btn bg-excel rounded-circle text-white sombra mx-2">O</button>
+                                                <!--Botón de Excel-->
+
+                                            </div>
+                                        </div>
+                                        <!--Botonera de herramientas-->
+
+                                    </div>
+                                </div>
+                                <div class="col-11 mt-5 mx-auto">
+
+                                    <!--Tabla de datos-->
+                                    <table class="table table-sm table-hover table-striped text-center bg-white card-dashboard sombra mt-2">
+                                        <thead class="bg-turquesa border-0 bold">
+                                            <tr class="text-white">
+                                                <th scope="col" class="border-0 pl-2" style="border-radius: 15px 0 0 0;">N°</th>
+                                                <th scope="col" class="border-0">Cliente</th>
+                                                <th scope="col" class="border-0">Celular</th>
+                                                <th scope="col" class="border-0">Concepto</th>
+                                                <th scope="col" class="border-0">Total</th>
+                                                <th scope="col" class="border-0">Cuotas</th>
+                                                <th scope="col" class="border-0 pr-2" style="border-radius: 0 15px 0 0;">Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="pl-2">01</td>
+                                                <td>Armando Lios</td>
+                                                <td>983736153</td>
+                                                <td>Farola-Semanal</td>
+                                                <td>S/ 28.00</td>
+                                                <td>185 + S/ 23.00</td>
+                                                <td class="pr-2 text-center">S/ 5 203.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pl-2">02</td>
+                                                <td>Armando Lios</td>
+                                                <td>983736153</td>
+                                                <td>Farola-Semanal</td>
+                                                <td>S/ 28.00</td>
+                                                <td>185 + S/ 23.00</td>
+                                                <td class="pr-2 text-center">S/ 5 203.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--Tabla de datos-->
+
+                                    <!--Total-->
+                                    <div class="row justify-content-end">
+                                        <div class="col-auto">
+                                            <div class="card bg-azul text-white bold rounded-pill sombra my-4 px-3 py-1">Total: S/ 10 406.00</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Total-->
+
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-contactos" role="tabpanel" aria-labelledby="v-pills-contactos-tab">
-                        <h1>Contactos</h1>
+                    <!--Contenido de tareas a realizar-->
+
+                    <!--Contenido de usuarios-->
+                    <div class="tab-pane fade" id="v-pills-usuarios" role="tabpanel" aria-labelledby="v-pills-usuarios-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-10 mx-auto">
+
+                                    <!--Título de sección-->
+                                    <div class="bold bg-white text-azul sombra rounded-pill mt-3 mb-4 d-flex align-items-center justify-content-between text-azul py-2 pl-3">Usuario</div>
+                                    <!--Título de sección-->
+
+                                </div>
+                                <div class="col-11 mt-5 mx-auto">
+                                    <div class="card card-dashboard border-0 sombra mt-2 pb-3" style="position: relative;">
+
+                                        <!--Tabla de datos-->
+                                        <table class="table table-sm table-hover bg-white card-dashboard">
+                                            <thead class="bg-turquesa border-0 bold">
+                                                <tr class="text-white">
+                                                    <th scope="col" class="border-0 pl-4 pt-5 pb-3" style="border-radius: 15px 0 0 0;">DNI</th>
+                                                    <th scope="col" class="border-0 pt-5 pb-3">Nombre</th>
+                                                    <th scope="col" class="border-0 pt-5 pb-3">Celular</th>
+                                                    <th scope="col" class="border-0 pt-5 pb-3">Rol</th>
+                                                    <th scope="col" class="border-0 pr-2 pt-5 pb-3 text-center" style="border-radius: 0 15px 0 0;">Detalles</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="pl-4">75482151</td>
+                                                    <td>Juan Carlos Severino Ordoñez</td>
+                                                    <td>965 256 487</td>
+                                                    <td>Gerente</td>
+                                                    <td class="pr-2 text-center">
+                                                        <button class="btn rounded-circle border-0 p-0">
+                                                            <hr class="rounded-circle ic-cumple m-0">
+                                                        </button>
+                                                        <button class="btn rounded-circle border-0 p-0">
+                                                            <hr class="rounded-circle ic-perfil m-0">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl-4">75482151</td>
+                                                    <td>Juan Carlos Severino Ordoñez</td>
+                                                    <td>965 256 487</td>
+                                                    <td>Administrador</td>
+                                                    <td class="pr-2 text-center">
+                                                        <button class="btn rounded-circle border-0 p-0">
+                                                            <hr class="rounded-circle ic-cumple m-0">
+                                                        </button>
+                                                        <button class="btn rounded-circle border-0 p-0">
+                                                            <hr class="rounded-circle ic-perfil m-0">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl-4">75482151</td>
+                                                    <td>Juan Carlos Severino Ordoñez</td>
+                                                    <td>965 256 487</td>
+                                                    <td>Secretaria</td>
+                                                    <td class="pr-2 text-center">
+                                                        <button class="btn rounded-circle border-0 p-0">
+                                                            <hr class="rounded-circle ic-cumple m-0">
+                                                        </button>
+                                                        <button class="btn rounded-circle border-0 p-0">
+                                                            <hr class="rounded-circle ic-perfil m-0">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl-4">75482151</td>
+                                                    <td>Juan Carlos Severino Ordoñez</td>
+                                                    <td>965 256 487</td>
+                                                    <td>Administrador</td>
+                                                    <td class="pr-2 text-center">
+                                                        <button class="btn rounded-circle border-0 p-0">
+                                                            <hr class="rounded-circle ic-cumple m-0">
+                                                        </button>
+                                                        <button class="btn rounded-circle border-0 p-0">
+                                                            <hr class="rounded-circle ic-perfil m-0">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl-4">75482151</td>
+                                                    <td>Juan Carlos Severino Ordoñez</td>
+                                                    <td>965 256 487</td>
+                                                    <td>Administrador</td>
+                                                    <td class="pr-2 text-center">
+                                                        <button class="btn rounded-circle border-0 p-0">
+                                                            <hr class="rounded-circle ic-cumple m-0">
+                                                        </button>
+                                                        <button class="btn rounded-circle border-0 p-0">
+                                                            <hr class="rounded-circle ic-perfil m-0">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!--Tabla de datos-->
+
+                                        <!--Título de tabla lista de usuarios-->
+                                        <div class="col-3" style="position: absolute; top: -5%; left: 7.5%;">
+                                            <div class="card rounded-pill border-0 bg-white">
+                                                <div class="row d-flex justify-content-between text-turquesa">
+                                                    <h5 class="bold my-1 mx-auto">Lista de usuarios</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Título de tabla lista de usuarios-->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!--Contenido de usuarios-->
+
+                    <!--Contenido de clientes-->
+                    <div class="tab-pane fade" id="v-pills-clientes" role="tabpanel" aria-labelledby="v-pills-clientes-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-10 mx-auto">
+                    
+                                    <!--Título de sección-->
+                                    <div class="bold bg-white text-azul sombra rounded-pill mt-3 mb-4 d-flex align-items-center justify-content-between text-azul py-2 pl-3">Cliente</div>
+                                    <!--Título de sección-->
+
+                                    <!--Botón para registrar nuevo colaborador-->
+                                    <div class="row justify-content-start">
+                                        <button class="btn btn-verde rounded-pill text-white sombra px-4 bold py-0 mt-3 mb-5 ml-3">Registrar Cliente</button>
+                                    </div>
+                                    <!--Botón para registrar nuevo colaborador-->
+                    
+                                </div>
+                                <div class="col-11 mx-auto">
+                                    <div class="card card-dashboard border-0 sombra pb-3" style="position: relative;">
+                    
+                                        <!--Tabla de datos-->
+                                        <table class="table table-sm table-hover bg-white card-dashboard">
+                                            <thead class="bg-turquesa border-0 bold">
+                                                <tr class="text-white">
+                                                    <th scope="col" class="border-0 pl-4 pt-5 pb-3" style="border-radius: 15px 0 0 0;">Nombre y apellidos
+                                                    </th>
+                                                    <th scope="col" class="border-0 pt-5 pb-3">Celular</th>
+                                                    <th scope="col" class="border-0 pr-2 pt-5 pb-3" style="border-radius: 0 15px 0 0;">E-mail</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="pl-4">Corporación Vespro S. A. C.</td>
+                                                    <td>965 256 487</td>
+                                                    <td class="pr-2">ventas@corporacionvespro.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl-4">Industrias y derivados S. A. C.</td>
+                                                    <td>965 256 487</td>
+                                                    <td class="pr-2">ventas@niagara.com.pe</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl-4">Agricultores cafetales S. A. C.</td>
+                                                    <td>965 256 487</td>
+                                                    <td class="pr-2">ventas@cafesac.com</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!--Tabla de datos-->
+                    
+                                        <!--Título de tabla lista de usuarios-->
+                                        <div class="col-3" style="position: absolute; top: -5%; left: 7.5%;">
+                                            <div class="card rounded-pill border-0 bg-white">
+                                                <div class="row d-flex justify-content-between text-turquesa">
+                                                    <h5 class="bold my-1 mx-auto">Lista de Clientes</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Título de tabla lista de usuarios-->
+                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Contenido de clientes-->
+
+                    <!--Contenido de prospectos-->
+                    <div class="tab-pane fade" id="v-pills-prospectos" role="tabpanel" aria-labelledby="v-pills-prospectos-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-10 mx-auto">
+                    
+                                    <!--Título de sección-->
+                                    <div class="bold bg-white text-azul sombra rounded-pill mt-3 mb-4 d-flex align-items-center justify-content-between text-azul py-2 pl-3">Prospecto</div>
+                                    <!--Título de sección-->
+                    
+                                    <!--Botón para registrar nuevo colaborador-->
+                                    <div class="row justify-content-start">
+                                        <button class="btn btn-verde rounded-pill text-white sombra px-4 bold py-0 mt-3 mb-5 ml-3">Registrar Prospecto</button>
+                                    </div>
+                                    <!--Botón para registrar nuevo colaborador-->
+                    
+                                </div>
+                                <div class="col-11 mx-auto">
+                                    <div class="card card-dashboard border-0 sombra pb-3" style="position: relative;">
+                    
+                                        <!--Tabla de datos-->
+                                        <table class="table table-sm table-hover bg-white card-dashboard">
+                                            <thead class="bg-turquesa border-0 bold">
+                                                <tr class="text-white">
+                                                    <th scope="col" class="border-0 pl-4 pt-5 pb-3" style="border-radius: 15px 0 0 0;">
+                                                        Nombre y apellidos
+                                                    </th>
+                                                    <th scope="col" class="border-0 pt-5 pb-3">Celular</th>
+                                                    <th scope="col" class="border-0 pr-2 pt-5 pb-3" style="border-radius: 0 15px 0 0;">
+                                                        E-mail</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="pl-4">Corporación Vespro S. A. C.</td>
+                                                    <td>965 256 487</td>
+                                                    <td class="pr-2">ventas@corporacionvespro.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl-4">Industrias y derivados S. A. C.</td>
+                                                    <td>965 256 487</td>
+                                                    <td class="pr-2">ventas@niagara.com.pe</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pl-4">Agricultores cafetales S. A. C.</td>
+                                                    <td>965 256 487</td>
+                                                    <td class="pr-2">ventas@cafesac.com</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!--Tabla de datos-->
+                    
+                                        <!--Título de tabla lista de usuarios-->
+                                        <div class="col-3" style="position: absolute; top: -5%; left: 7.5%;">
+                                            <div class="card rounded-pill border-0 bg-white">
+                                                <div class="row d-flex justify-content-between text-turquesa">
+                                                    <h5 class="bold my-1 mx-auto">Lista de Prospectos</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Título de tabla lista de usuarios-->
+                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Contenido de prospectos-->
+
+                    <div class="tab-pane fade" id="v-pills-proveedores" role="tabpanel" aria-labelledby="v-pills-proveedores-tab">
+                        <h1>Proveedores</h1>
+                    </div>
+
                     <div class="tab-pane fade" id="v-pills-notificaciones" role="tabpanel" aria-labelledby="v-pills-notificaciones-tab">
                         <h1>Notificaciones</h1>
                     </div>

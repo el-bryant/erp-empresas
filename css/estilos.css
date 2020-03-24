@@ -142,3 +142,19 @@ body {
 .text-turquesa {
     color: #4ac2b9;
 }
+
+.bg-buscar {
+    background-color: #17ead4;
+}
+
+.bg-word {
+    background-color: #586fc4;
+}
+
+.bg-pdf {
+    background-color: #d13239;
+}
+
+.bg-excel {
+    background-color: #3bbe28;
+}
