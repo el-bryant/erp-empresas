@@ -23,8 +23,12 @@
                 theme: "minimal"
             });
         });
-        $('.nav-item').click(function () {
-            $('.nav-item').removeClass("active");
+        $('#navEstadoFinanciero').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#navConceptos').click(function () {
+            $('.nav-link').removeClass("active");
             $(this).addClass("active");
         });
     </script>
