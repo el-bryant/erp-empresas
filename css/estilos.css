@@ -19,6 +19,7 @@ body {
 }
 
 .nav-link {
+    font-family: 'tahoma-regular';
     color: #ffffff;
 }
 
@@ -59,21 +60,15 @@ body {
 }
 
 .ic-cumple {
-    background-color: #17ead4;
-    width: 20px;
-    height: 20px;
+    color: #17ead4;
 }
 
 .ic-perfil {
-    background-color: #42e695;
-    width: 20px;
-    height: 20px;
+    color: #42e695;
 }
 
 .ic-opciones {
-    background-color: #005da1;
-    width: 20px;
-    height: 20px;
+    color:#005da1;
 }
 
 .navbar {
@@ -170,4 +165,38 @@ body {
     left: 0;
     height: 100vh;
     z-index: 999;
+}
+
+.t-11 {
+    font-family: 'tahoma-regular';
+    font-size: 11px;
+    line-height: 11px;
+}
+
+.t-12 {
+    font-family: 'tahoma-regular';
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.t-13 {
+    font-family: 'tahoma-regular';
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.t-14 {
+    font-family: 'tahoma-regular';
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.t-15 {
+    font-family: 'tahoma-regular';
+    font-size: 15px;
+    line-height: 15px;
+}
+
+#subnavVenta, #subnavOtrosIngresos, #subnavInversion, #subnavOtrosEgresos, #subnavCuentas, #subnavUsuarios, #subnavClientes, #subnavProspectos, #subnavProveedores, #subnavStock, #subnavLote, #subnavKardex {
+    font-size: 13px;
 }

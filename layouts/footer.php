@@ -26,8 +26,77 @@
         $('#navEstadoFinanciero').click(function () {
             $('.nav-link').removeClass("active");
             $(this).addClass("active");
+            $(this).addClass("text-azul");
+        });
+        $('#subnavVenta').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#subnavOtrosIngresos').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#subnavInversion').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#subnavOtrosEgresos').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
         });
         $('#navConceptos').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#navColaboradores').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#navInformes').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#subnavCuentas').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#subnavUsuarios').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#subnavClientes').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#subnavProspectos').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#subnavProveedores').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#navNotificaciones').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#navCalendario').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#navConfiguracion').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#subnavStock').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#subnavLote').click(function () {
+            $('.nav-link').removeClass("active");
+            $(this).addClass("active");
+        });
+        $('#subnavKardex').click(function () {
             $('.nav-link').removeClass("active");
             $(this).addClass("active");
         });
